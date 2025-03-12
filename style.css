@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(225, 224, 224);
+}
+.card {
+  height: 20vh;
+  width: 80vw;
+  margin: auto;
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.thumbnail {
+  align-items: center;
+  height: 18vh;
+  width: 15vw;
+  position: relative;
+  border-radius: 10px;
+}
+.thumbnail > img {
+  height: 18vh;
+  width: 15vw;
+  object-fit: contain;
+  object-position: center center;
+  position: absolute;
+  border-radius: 10px;
+}
+.thumbnail span {
+  background-color: rgba(33, 33, 33, 0.803);
+  color: white;
+  position: absolute;
+  bottom: 3px;
+  right: 20px;
+  padding: 3px;
+  border-radius: 5px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  height: 19vh;
+  width: calc(80vw - 15vw);
+  gap: 1rem;
+}
+.details h1 {
+  margin: 3px;
+  color: white;
+}
+.more-details > ul {
+  display: flex;
+  gap: 2rem;
+  color: gray;
+}
+ul :first-child {
+  list-style: none;
+}
